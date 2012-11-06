@@ -4,7 +4,7 @@ Punkshows::Application.routes.draw do
       get :following, :followers
     end
   end
-  resources :sessions,      only: [:new, :create, :destroy]
+  resources :sessions,      only: [:new, :create, :edit, :destroy]
   resources :shows,    only: [:create, :destroy, :show, :edit, :update]
   resources :relationships, only: [:create, :destroy]
   resources :bands,         only: [:create, :destroy, :show, :edit, :update, :index]

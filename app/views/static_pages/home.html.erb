@@ -1,6 +1,39 @@
 <% provide(:title, 'home') %>
 <div class="tab-content">
-  <%= render 'shared/calendar' %>
+  <% if signed_in? %>
+  <div class="alert alert-block">
+  
+  <h4>Important Messages</h4>
+  <% if @past_items.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/feed_item', collection: @past_items %>
+    <%= will_paginate @past_items %>
+  </ol>
+  
+<% end %>
+</div>
+  
+  <% else %>
+  <div class="row">
+  <div class="span6">
+    <h1> Returning? </h1>
+    <br />
+    <%= form_for(:session, :url => sessions_path) do |f| %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
+    <% end %>
+</div>
+<div class="span3 offset6">
+    <p>New user? <%= link_to "Sign up now!", signup_path, :class => "btn btn-large btn-primary" %></p>
+    </div>
+</div>
+<% end %>
 </div>
  
 

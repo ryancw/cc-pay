@@ -17,7 +17,7 @@
   height: 50px;
   display: block;
   border-bottom: 1px solid #EEE;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 } 
 
 #TopLevelNav li {
@@ -35,18 +35,19 @@
 }
 
 #topheader {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 #month-list {
   
 }
 
-#titles { 
-  margin: 0; 
+#titles {
+  font-size: 14px;
+  margin: 0 auto; 
   padding: 0; 
   display: inline; 
-  padding-bottom: -10px; 
+  padding-bottom: -20px; 
   padding-left: 2px;
 }
 #titles li {
@@ -321,7 +322,7 @@ input, textarea, .uneditable-input {
   }
 
   a:link, a:visited{
-  color: #000;
+  color: #0192b5;
   }
 }
 .content {
