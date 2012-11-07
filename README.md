@@ -1,4 +1,3 @@
-# PUNK-SHOWS: event listing application
+# Bill Pay Center: credit card paying application
 
-This is an in-progress application for listing shows.
-You can view a working version at ctshows.org (loads slowly at first due to being hosted on Heroku).
+Created for IS4300 Human Computer Interaction in Fall of 2012.
