@@ -14,7 +14,8 @@ def new
 end
 
 def past
-  @past_items = Show.where('date < ?', Date.today,).order("date DESC").paginate(page: params[:page])
+  @past_items = Show.where('date > ?', Date.today).order("date DESC").paginate(page: params[:page])
+  
 end
 
 #def future

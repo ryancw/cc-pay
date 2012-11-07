@@ -6,7 +6,7 @@
       <%= image_tag("ctsmall.gif", :size => "25x35") %>
         <ul id="navlist">
           <% if signed_in? %>
-            <li><%= link_to "Welcome #{current_user.name}", current_user %></li> /
+            <li><%= "Welcome back, #{current_user.name}" %></li> /
             <li> <%= link_to "Add Show", newshow_path %></li>
             <li><%= link_to "Settings", edit_user_path(current_user) %></li>
             <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
@@ -20,11 +20,16 @@
       <% if signed_in? %>
       <div class="container">
         <ul class="nav nav-tabs" id="titles">
-        <li class="<%= "active" if params[:action] == "home" %>"><%= link_to "Home ", root_path %></li>
-        <li class="<%= "active" if params[:action] == "static_pages" %>"><%= link_to "Bill History", root_path %></li>
-        <li class="<%= "active" if params[:action] == "shows" %>"><%= link_to "Alerts", past_path %></li>
-        <li class="<%= "active" if params[:action] == "static_pages" %>"><%= link_to "Manage Accounts", past_path %></li>
-        <li class="<%= "active" if params[:controller] == "users" %>"><%= link_to "Settings", edit_user_path(current_user) %></li>
+        <li class="<%= "active" if params[:action] == "home" %>">
+          <%= link_to '<i class="icon-home"></i> Home'.html_safe, root_path %></li>
+        <li class="<%= "active" if params[:action] == "history" %>">
+          <%= link_to '<i class="icon-folder-open"></i>  Bill History'.html_safe, history_path %></li>
+        <li class="<%= "active" if params[:action] == "shows" %>">
+          <%= link_to '<i class="icon-calendar"></i> Alerts'.html_safe, past_path %></li>
+        <li class="<%= "active" if params[:action] == "past" %>">
+          <%= link_to '<i class="icon-align-left"></i> Manage Accounts'.html_safe, manageaccounts_path %></li>
+        <li class="<%= "active" if params[:controller] == "users" && params[:action] == "edit" %>">
+          <%= link_to '<i class="icon-cog"></i> Settings'.html_safe, edit_user_path(current_user) %></li>
       </ul>
     </div>
     <% else %>

@@ -29,3 +29,13 @@
 [11/05/12 14:56:58 -0500 Ryans-MacBook-Pro.local (8164)] WARN : Agent configured not to send data in this environment.
 [11/05/12 14:56:58 -0500 Ryans-MacBook-Pro.local (8164)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 8164
 [11/05/12 14:56:58 -0500 Ryans-MacBook-Pro.local (8164)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/06/12 14:35:31 -0500 Ryans-MacBook-Pro.local (2498)] INFO : Dispatcher: thin
+[11/06/12 14:35:31 -0500 Ryans-MacBook-Pro.local (2498)] INFO : Application: My Application
+[11/06/12 14:35:31 -0500 Ryans-MacBook-Pro.local (2498)] WARN : Agent configured not to send data in this environment.
+[11/06/12 14:35:31 -0500 Ryans-MacBook-Pro.local (2498)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 2498
+[11/06/12 14:35:31 -0500 Ryans-MacBook-Pro.local (2498)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : Dispatcher: thin
+[11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : Application: My Application
+[11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] WARN : Agent configured not to send data in this environment.
+[11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5564
+[11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log

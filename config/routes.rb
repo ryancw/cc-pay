@@ -20,15 +20,17 @@ Punkshows::Application.routes.draw do
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/links', to: 'static_pages#links'
+  match '/history', to: 'static_pages#history'
   match '/newshow', to: 'shows#new'
   match '/addband', to: 'bands#new'
-  match '/past', to: 'shows#past'
+  match '/manageaccounts', to: 'shows#past'
   match '/future', to: 'shows#future'
 
   get "static_pages/home"
   get "static_pages/about"
   get "static_pages/help"
   get "static_pages/contact"
+  get "static_pages/history"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
