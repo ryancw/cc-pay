@@ -39,3 +39,174 @@
 [11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] WARN : Agent configured not to send data in this environment.
 [11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 5564
 [11/06/12 17:42:09 -0500 Ryans-MacBook-Pro.local (5564)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 14:25:53 -0500 Ryans-MacBook-Pro.local (7186)] INFO : Dispatcher: thin
+[11/07/12 14:25:53 -0500 Ryans-MacBook-Pro.local (7186)] INFO : Application: My Application
+[11/07/12 14:25:53 -0500 Ryans-MacBook-Pro.local (7186)] WARN : Agent configured not to send data in this environment.
+[11/07/12 14:25:53 -0500 Ryans-MacBook-Pro.local (7186)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7186
+[11/07/12 14:25:53 -0500 Ryans-MacBook-Pro.local (7186)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 14:27:50 -0500 Ryans-MacBook-Pro.local (7191)] INFO : Dispatcher: thin
+[11/07/12 14:27:50 -0500 Ryans-MacBook-Pro.local (7191)] INFO : Application: My Application
+[11/07/12 14:27:50 -0500 Ryans-MacBook-Pro.local (7191)] WARN : Agent configured not to send data in this environment.
+[11/07/12 14:27:50 -0500 Ryans-MacBook-Pro.local (7191)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7191
+[11/07/12 14:27:50 -0500 Ryans-MacBook-Pro.local (7191)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 14:28:10 -0500 Ryans-MacBook-Pro.local (7193)] INFO : Dispatcher: thin
+[11/07/12 14:28:10 -0500 Ryans-MacBook-Pro.local (7193)] INFO : Application: My Application
+[11/07/12 14:28:10 -0500 Ryans-MacBook-Pro.local (7193)] WARN : Agent configured not to send data in this environment.
+[11/07/12 14:28:10 -0500 Ryans-MacBook-Pro.local (7193)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7193
+[11/07/12 14:28:10 -0500 Ryans-MacBook-Pro.local (7193)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 15:47:51 -0500 Ryans-MacBook-Pro.local (7380)] INFO : Dispatcher: thin
+[11/07/12 15:47:51 -0500 Ryans-MacBook-Pro.local (7380)] INFO : Application: My Application
+[11/07/12 15:47:51 -0500 Ryans-MacBook-Pro.local (7380)] WARN : Agent configured not to send data in this environment.
+[11/07/12 15:47:51 -0500 Ryans-MacBook-Pro.local (7380)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7380
+[11/07/12 15:47:51 -0500 Ryans-MacBook-Pro.local (7380)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 15:49:10 -0500 Ryans-MacBook-Pro.local (7385)] INFO : Dispatcher: thin
+[11/07/12 15:49:10 -0500 Ryans-MacBook-Pro.local (7385)] INFO : Application: My Application
+[11/07/12 15:49:10 -0500 Ryans-MacBook-Pro.local (7385)] WARN : Agent configured not to send data in this environment.
+[11/07/12 15:49:10 -0500 Ryans-MacBook-Pro.local (7385)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7385
+[11/07/12 15:49:10 -0500 Ryans-MacBook-Pro.local (7385)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 16:26:51 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:27:10 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:27:10 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:27:56 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:27:56 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:28:40 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:28:40 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:29:13 -0500 Ryans-MacBook-Pro.local (7501)] INFO : Dispatcher: thin
+[11/07/12 16:29:13 -0500 Ryans-MacBook-Pro.local (7501)] INFO : Application: My Application
+[11/07/12 16:29:13 -0500 Ryans-MacBook-Pro.local (7501)] WARN : Agent configured not to send data in this environment.
+[11/07/12 16:29:13 -0500 Ryans-MacBook-Pro.local (7501)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7501
+[11/07/12 16:29:13 -0500 Ryans-MacBook-Pro.local (7501)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 16:38:43 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find User with id=edit
+[11/07/12 16:38:43 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find User with id=edit
+[11/07/12 16:38:46 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find User with id=2
+[11/07/12 16:38:46 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find User with id=2
+[11/07/12 16:43:26 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </ol>
+   ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:14: unknown regexp options - dv
+unmatched close parenthesis: /ol>
+  
+<% end );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:17: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('  <div class="row">
+                                        ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:18: syntax error, unexpected '<'
+  <div class="span6">
+   ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:19: syntax error, unexpected '<'
+    <h1>Welcome!</h1>
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:21: syntax error, unexpected '<'
+    <h3> Returning? </h3>
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:27: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+');@output_buffer.safe_concat('      <div class="input-append">
+                                               ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:34: unknown regexp options - dv
+unmatched close parenthesis: /div>
+');     end 
+@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:35: syntax error, unexpected '<'
+<div class="span3 offset6">
+ ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:36: syntax error, unexpected '<'
+    <p>New user? ');@output_buffer...
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:36: syntax error, unexpected tFID, expecting keyword_do or '{' or '('
+    <p>New user? ');@output_buffer.append= ( ...
+                ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:37: unknown regexp options - dv
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:38: syntax error, unexpected '<'
+</div>
+ ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:40: unknown regexp options - dv
+unmatched close parenthesis: /div>
+'); end 
+@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:43: unterminated string meets end of file
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:43: syntax error, unexpected $end, expecting ')'
+[11/07/12 16:43:26 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:11: syntax error, unexpected '<', expecting ')'
+  </ol>
+   ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:14: unknown regexp options - dv
+unmatched close parenthesis: /ol>
+  
+<% end );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:17: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+@output_buffer.safe_concat('  <div class="row">
+                                        ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:18: syntax error, unexpected '<'
+  <div class="span6">
+   ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:19: syntax error, unexpected '<'
+    <h1>Welcome!</h1>
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:21: syntax error, unexpected '<'
+    <h3> Returning? </h3>
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:27: syntax error, unexpected keyword_class, expecting keyword_do or '{' or '('
+');@output_buffer.safe_concat('      <div class="input-append">
+                                               ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:34: unknown regexp options - dv
+unmatched close parenthesis: /div>
+');     end 
+@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:35: syntax error, unexpected '<'
+<div class="span3 offset6">
+ ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:36: syntax error, unexpected '<'
+    <p>New user? ');@output_buffer...
+     ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:36: syntax error, unexpected tFID, expecting keyword_do or '{' or '('
+    <p>New user? ');@output_buffer.append= ( ...
+                ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:37: unknown regexp options - dv
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:38: syntax error, unexpected '<'
+</div>
+ ^
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:40: unknown regexp options - dv
+unmatched close parenthesis: /div>
+'); end 
+@output_buffer.safe_concat('</i
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:43: unterminated string meets end of file
+/Users/Ryan/Documents/Code/CC/ccpay/app/views/static_pages/home.html.erb:43: syntax error, unexpected $end, expecting ')'
+[11/07/12 16:45:05 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:45:05 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:45:13 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:45:13 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:46:13 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:46:13 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:46:14 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:46:14 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `[]' for nil:NilClass
+[11/07/12 16:47:32 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 16:47:32 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 16:48:54 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: SQLite3::SQLException: no such column: userid: SELECT COUNT(*) FROM "shows"  WHERE (userid == 1)
+[11/07/12 16:48:54 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: SQLite3::SQLException: no such column: userid: SELECT COUNT(*) FROM "shows"  WHERE (userid == 1)
+[11/07/12 16:50:55 -0500 Ryans-MacBook-Pro.local (7555)] INFO : Dispatcher: thin
+[11/07/12 16:50:55 -0500 Ryans-MacBook-Pro.local (7555)] INFO : Application: My Application
+[11/07/12 16:50:55 -0500 Ryans-MacBook-Pro.local (7555)] WARN : Agent configured not to send data in this environment.
+[11/07/12 16:50:55 -0500 Ryans-MacBook-Pro.local (7555)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7555
+[11/07/12 16:50:55 -0500 Ryans-MacBook-Pro.local (7555)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 16:51:12 -0500 Ryans-MacBook-Pro.local (7557)] INFO : Dispatcher: thin
+[11/07/12 16:51:12 -0500 Ryans-MacBook-Pro.local (7557)] INFO : Application: My Application
+[11/07/12 16:51:12 -0500 Ryans-MacBook-Pro.local (7557)] WARN : Agent configured not to send data in this environment.
+[11/07/12 16:51:12 -0500 Ryans-MacBook-Pro.local (7557)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 7557
+[11/07/12 16:51:12 -0500 Ryans-MacBook-Pro.local (7557)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[11/07/12 17:12:23 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `to_param' called for #<Show:0x007f9cbef18990>
+[11/07/12 17:12:23 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `to_param' called for #<Show:0x007f9cbef18990>
+[11/07/12 17:12:27 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `to_param' called for #<Show:0x007f9cc32978d8>
+[11/07/12 17:12:27 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `to_param' called for #<Show:0x007f9cc32978d8>
+[11/07/12 17:12:30 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `last_four' called for #<Show:0x007f9cbeead438>
+[11/07/12 17:12:30 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: private method `last_four' called for #<Show:0x007f9cbeead438>
+[11/07/12 17:12:38 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/Ryan/Documents/Code/CC/ccpay/app/models/show.rb:60: syntax error, unexpected keyword_end, expecting $end
+[11/07/12 17:12:40 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/Ryan/Documents/Code/CC/ccpay/app/models/show.rb:60: syntax error, unexpected keyword_end, expecting $end
+[11/07/12 17:20:40 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 17:20:40 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 17:20:42 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 17:20:42 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `month' for nil:NilClass
+[11/07/12 17:27:30 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `feed_item' for #<#<Class:0x007f9cbee95bd0>:0x007f9cc341dfb8>
+[11/07/12 17:27:30 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `feed_item' for #<#<Class:0x007f9cbee95bd0>:0x007f9cc341dfb8>
+[11/07/12 17:27:33 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `feed_item' for #<#<Class:0x007f9cbee95bd0>:0x007f9cbeebec38>
+[11/07/12 17:27:33 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined local variable or method `feed_item' for #<#<Class:0x007f9cbee95bd0>:0x007f9cbeebec38>

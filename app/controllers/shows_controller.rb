@@ -14,8 +14,14 @@ def new
 end
 
 def past
-  @past_items = Show.where('date > ?', Date.today).order("date DESC").paginate(page: params[:page])
-  
+  @past_items = current_user.shows
+  @pas_items = Show.where('date > ?', Date.today).order("date DESC").paginate(page: params[:page])
+end
+
+def pay
+  params[:money_paid]
+  flash[:success] = "Your payment has been scheduled."
+  redirect_to root_path
 end
 
 #def future
@@ -108,8 +114,8 @@ def update
   def create
     @show = current_user.shows.build(params[:show])
     if @show.save
-      flash[:success] = "show created! good job!"
-      redirect_to root_path
+      flash[:success] = "Credit Card Added."
+      redirect_back_or root_path
     else
       @feed_items = []
       render 'static_pages/home'

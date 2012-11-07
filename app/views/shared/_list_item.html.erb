@@ -1,0 +1,18 @@
+<li id="<%= list_item.id %>">
+    <span class="content">
+      <i class="icon-exclamation-sign"></i> <%= list_item.cardtype %> - <%= list_item.last_four %> - Expiration:
+       <%= list_item.date.month %>/<%= list_item.date.year %>
+     
+     <div class="addnew">
+  <% if current_user?(list_item.user) %>
+    <%= link_to '<i class="icon-edit"></i>'.html_safe, edit_show_path(list_item) %>
+    <%= link_to '<i class="icon-trash"></i>'.html_safe, list_item, method:  :delete,
+                                     confirm: "You sure?",
+                                     title:   list_item.content %>
+    
+  <% end %>
+  </span>
+</div>
+</li>
+
+

@@ -1,0 +1,35 @@
+<h1> Pay Credit Card <%= @show.cardtype %> </h2>
+
+<%= form_for(@show) do |f| %>
+ <%= render 'shared/error_messages', object: f.object %>
+    
+
+  <div class="field">
+    <%= f.text_field :acts, placeholder: "First Name" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :location, placeholder: "Last Name" %>
+  </div>
+
+  <div class="field">
+    <%= f.select :cardtype, Show::CARDS %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :cardnumber, placeholder: "Card Number" %>
+  </div>
+
+  Expiration Date
+
+  <div class="field">
+    <%= f.date_select :date, :discard_day => true, :add_month_numbers => "true" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :details, placeholder: "Security Code", :size => "5x1"  %>
+  </div>
+  
+  <%= f.submit "submit", class: "btn btn-large btn-primary" %>
+<% end %>
+
+

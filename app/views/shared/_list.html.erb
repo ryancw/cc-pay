@@ -1,0 +1,6 @@
+<% if @past_items.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/list_item', collection: @past_items %>
+  </ol>
+  
+<% end %>

@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121025193119) do
+ActiveRecord::Schema.define(:version => 20121107215055) do
+
+  create_table "alerts", :force => true do |t|
+    t.string   "type"
+    t.string   "contact"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "bands", :force => true do |t|
     t.string   "name"
@@ -25,6 +32,15 @@ ActiveRecord::Schema.define(:version => 20121025193119) do
   end
 
   add_index "bands", ["user_id", "created_at"], :name => "index_bands_on_user_id_and_created_at"
+
+  create_table "bank_accounts", :force => true do |t|
+    t.string   "nickname"
+    t.string   "bankname"
+    t.string   "routing"
+    t.string   "checking"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -49,6 +65,10 @@ ActiveRecord::Schema.define(:version => 20121025193119) do
     t.string   "fblink"
     t.string   "flyerlink"
     t.string   "altlink"
+    t.string   "cardtype"
+    t.string   "cardnumber"
+    t.date     "billdate"
+    t.integer  "owed"
   end
 
   add_index "shows", ["user_id", "created_at"], :name => "index_microposts_on_user_id_and_created_at"

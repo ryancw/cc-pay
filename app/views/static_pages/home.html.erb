@@ -7,7 +7,7 @@
   <% if @past_items.any? %>
   <ol class="microposts">
     <%= render partial: 'shared/feed_item', collection: @past_items %>
-    <%= will_paginate @past_items %>
+
   </ol>
   
 <% end %>
@@ -16,17 +16,20 @@
   <% else %>
   <div class="row">
   <div class="span6">
-    <h1> Returning? </h1>
+    <h1>Welcome!</h1>
+    <br />
+    <h3> Returning? </h3>
     <br />
     <%= form_for(:session, :url => sessions_path) do |f| %>
 
       <%= f.label :email %>
       <%= f.text_field :email %>
-
+      <div class="input-append">
       <%= f.label :password %>
       <%= f.password_field :password %>
 
       <%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
+    </div>
     <% end %>
 </div>
 <div class="span3 offset6">

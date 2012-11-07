@@ -18,8 +18,9 @@
       <%= f.label :password_confirmation, "Confirm Password" %>
       <%= f.password_field :password_confirmation %>
 
-<div class="offset 6">
-      <div class="btn-off"><%= cancel_link %></div> <%= f.submit "Save changes", :class => "btn btn-large btn-primary" %>
+<div class="form-horizontal">
+
+     <%= link_to cancel_link, :class => "btn-off" %>  <%= f.submit "Save changes", :class => "btn btn-large btn-primary" %>
       
       </div>
 

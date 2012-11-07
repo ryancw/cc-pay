@@ -3,12 +3,10 @@
 <div id="HeaderWrapper">
   <div class="container" id="topheader">
       <%= link_to "Bill Pay Center", root_path, id: "logo" %>
-      <%= image_tag("ctsmall.gif", :size => "25x35") %>
+      
         <ul id="navlist">
           <% if signed_in? %>
             <li><%= "Welcome back, #{current_user.name}" %></li> /
-            <li> <%= link_to "Add Show", newshow_path %></li>
-            <li><%= link_to "Settings", edit_user_path(current_user) %></li>
             <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
               </ul>
             </li>
@@ -24,9 +22,9 @@
           <%= link_to '<i class="icon-home"></i> Home'.html_safe, root_path %></li>
         <li class="<%= "active" if params[:action] == "history" %>">
           <%= link_to '<i class="icon-folder-open"></i>  Bill History'.html_safe, history_path %></li>
-        <li class="<%= "active" if params[:action] == "shows" %>">
-          <%= link_to '<i class="icon-calendar"></i> Alerts'.html_safe, past_path %></li>
-        <li class="<%= "active" if params[:action] == "past" %>">
+        <li class="<%= "active" if params[:controller] == "alerts" %>">
+          <%= link_to '<i class="icon-calendar"></i> Alerts'.html_safe, alerts_path %></li>
+        <li class="<%= "active" if params[:controller] == "shows" && params[:action] == "past" %>">
           <%= link_to '<i class="icon-align-left"></i> Manage Accounts'.html_safe, manageaccounts_path %></li>
         <li class="<%= "active" if params[:controller] == "users" && params[:action] == "edit" %>">
           <%= link_to '<i class="icon-cog"></i> Settings'.html_safe, edit_user_path(current_user) %></li>

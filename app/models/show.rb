@@ -1,12 +1,12 @@
 class Show < ActiveRecord::Base
-  attr_accessible :content, :date, :location, :acts, :details, :fblink, :flyerlink, :altlink
+  attr_accessible :content, :date, :location, :acts, :details, :fblink, :flyerlink, :altlink, :cardtype, :cardnumber, :billdate, :owed
   belongs_to :user
   has_many :bands
 
-  validates :location, presence: true, length: { maximum: 140 }
-  validates :date, presence: true
   validates :acts, presence: true, length: { maximum: 140 }
   validates :user_id, presence: true
+  validates :date, presence: true
+  validates :cardnumber, presence: true
 
   #default_scope :order => 'shows.date ASC'
 
@@ -14,8 +14,17 @@ class Show < ActiveRecord::Base
   scope :from_users_followed_by, lambda { |user| followed_by(user) }
 
 self.per_page = 25
+
+before_create :default_values
+
+CARDS = ['Visa', 'American Express', 'Mastercard']
+
   def to_param
     "#{id} #{acts}".parameterize
+  end
+
+  def last_four
+    self.cardnumber[-4, 4]
   end
 
 
@@ -34,6 +43,9 @@ end
 
   private
 
+  def default_values
+      self.billdate ||= "2012-11-29"
+    end
     # Returns an SQL condition for users followed by the given user.
     # We include the user's own id as well.
     def self.followed_by(user)
