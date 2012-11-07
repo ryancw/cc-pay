@@ -1,4 +1,18 @@
 <% if @past_items.any? %>
+  <table>
+    <thead>
+    <tr>
+      <th>Card Type</th>
+      <th>Last 4 Digits</th>
+      <th>Expiration Date</th>
+      <th>Last Name</th>
+    </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'shared/list_item', collection: @past_items %>
+    </tbody>
+
+    </table>
   <ol class="microposts">
     <%= render partial: 'shared/list_item', collection: @past_items %>
   </ol>

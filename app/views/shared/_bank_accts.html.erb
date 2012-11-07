@@ -1,0 +1,6 @@
+<% if @bank_items.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/bank_item', collection: @bank_items %>
+  </ol>
+  
+<% end %>

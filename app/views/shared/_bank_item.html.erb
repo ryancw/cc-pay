@@ -1,0 +1,18 @@
+<li id="<%= bank_item.id %>">
+    <span class="content">
+      <i class="icon-exclamation-sign"></i> <%= bank_item.checking %> - <%= bank_item.routing %> - Expiration:
+       <%= bank_item.nickname %>/<%= bank_item.bank %>
+     
+     <div class="addnew">
+  <% if current_user?(bank_item.user) %>
+    <%= link_to '<i class="icon-edit"></i>'.html_safe, edit_show_path(bank_item) %>
+    <%= link_to '<i class="icon-trash"></i>'.html_safe, bank_item, method:  :delete,
+                                     confirm: "You sure?",
+                                     title:   bank_item.nickname %>
+    
+  <% end %>
+  </span>
+</div>
+</li>
+
+

@@ -1,0 +1,25 @@
+<h1>Listing blerts</h1>
+
+<table>
+  <tr>
+    <th>Alerttype</th>
+    <th>Contact</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @blerts.each do |blert| %>
+  <tr>
+    <td><%= blert.alerttype %></td>
+    <td><%= blert.contact %></td>
+    <td><%= link_to 'Show', blert %></td>
+    <td><%= link_to 'Edit', edit_blert_path(blert) %></td>
+    <td><%= link_to 'Destroy', blert, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Blert', newalert_path %>

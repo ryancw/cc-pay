@@ -8,6 +8,5 @@ class CreateBankAccounts < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :bank_accounts, [:user_id, :created_at]
   end
 end

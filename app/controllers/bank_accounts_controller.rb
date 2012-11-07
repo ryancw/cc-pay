@@ -1,4 +1,6 @@
 class BankAccountsController < ApplicationController
+  before_filter :signed_in_user, only: [:create, :destroy, :edit]
+  before_filter :correct_user,   only: [:destroy, :edit]
   # GET /bank_accounts
   # GET /bank_accounts.json
   def index
@@ -80,4 +82,13 @@ class BankAccountsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+    def correct_user
+      @bank_account = current_user.bank_accounts.find_by_id(params[:id])
+      redirect_to root_path if @bank_account.nil?
+    end
+
+  
 end

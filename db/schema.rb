@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121107215055) do
+ActiveRecord::Schema.define(:version => 20121107225754) do
 
   create_table "alerts", :force => true do |t|
     t.string   "type"
@@ -40,7 +40,20 @@ ActiveRecord::Schema.define(:version => 20121107215055) do
     t.string   "checking"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
+
+  add_index "bank_accounts", ["user_id", "created_at"], :name => "index_bank_accounts_on_user_id_and_created_at"
+
+  create_table "blerts", :force => true do |t|
+    t.string   "alerttype"
+    t.string   "contact"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+  end
+
+  add_index "blerts", ["user_id", "created_at"], :name => "index_blerts_on_user_id_and_created_at"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"

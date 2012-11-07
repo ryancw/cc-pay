@@ -1,0 +1,6 @@
+<% if @alert_items.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/alert_item', collection: @alert_items %>
+  </ol>
+  
+<% end %>

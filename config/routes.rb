@@ -1,7 +1,5 @@
 Punkshows::Application.routes.draw do
-  resources :alerts
 
-  resources :bank_accounts
 
   resources :users do
     member do
@@ -14,6 +12,7 @@ Punkshows::Application.routes.draw do
   resources :bands,         only: [:create, :destroy, :show, :edit, :update, :index]
   resources :alerts,        only: [:create, :destroy, :show, :edit, :update]
   resources :bank_accounts, only: [:create, :destroy, :show, :edit, :update]
+  resources :blerts,        only: [:create, :destroy, :show, :edit, :update]
 
   root to: 'static_pages#home'
 
@@ -29,6 +28,8 @@ Punkshows::Application.routes.draw do
   match '/history', to: 'static_pages#history'
   match '/newcard', to: 'shows#new'
   match '/newbank', to: 'bank_accounts#new'
+  match '/newalert', to: 'blerts#new'
+  match '/alerts', to: 'blerts#allblerts'
   match '/addband', to: 'bands#new'
   match '/manageaccounts', to: 'shows#past'
   match '/future', to: 'shows#future'

@@ -6,6 +6,5 @@ class CreateAlerts < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :alerts, [:user_id, :created_at]
   end
 end

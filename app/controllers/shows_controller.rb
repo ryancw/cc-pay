@@ -15,6 +15,8 @@ end
 
 def past
   @past_items = current_user.shows
+  @bank_items = current_user.bank_accounts
+  @alert_items = current_user.blerts
   @pas_items = Show.where('date > ?', Date.today).order("date DESC").paginate(page: params[:page])
 end
 
@@ -114,8 +116,8 @@ def update
   def create
     @show = current_user.shows.build(params[:show])
     if @show.save
-      flash[:success] = "Credit Card Added."
-      redirect_back_or root_path
+      flash[:success] = "Your credit card has been added."
+      redirect_back_or manageaccounts_path
     else
       @feed_items = []
       render 'static_pages/home'
