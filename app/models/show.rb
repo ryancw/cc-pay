@@ -45,7 +45,7 @@ end
 
   def default_values
       self.billdate ||= "2012-11-29"
-      self.owed ||= rand(300..1200)
+      self.owed ||= rand(500) + 200
     end
     # Returns an SQL condition for users followed by the given user.
     # We include the user's own id as well.
