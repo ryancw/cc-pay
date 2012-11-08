@@ -3,6 +3,7 @@ class BlertsController < ApplicationController
   before_filter :correct_user,   only: [:destroy, :edit]
   # GET /blerts
   # GET /blerts.json
+  
   def index
     @blerts = Blert.all
 
@@ -48,9 +49,10 @@ class BlertsController < ApplicationController
   def create
     @blert = current_user.blerts.build(params[:blert])
 
+
     respond_to do |format|
       if @blert.save
-        format.html { redirect_to @blert, notice: 'Blert was successfully created.' }
+        format.html { redirect_to alerts_path, notice: 'Alert was successfully created.' }
         format.json { render json: @blert, status: :created, location: @blert }
       else
         format.html { render action: "new" }
@@ -66,7 +68,7 @@ class BlertsController < ApplicationController
 
     respond_to do |format|
       if @blert.update_attributes(params[:blert])
-        format.html { redirect_to @blert, notice: 'Blert was successfully updated.' }
+        format.html { redirect_to alerts_path, notice: 'Alert was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

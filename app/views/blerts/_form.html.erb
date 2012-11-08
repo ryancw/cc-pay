@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
+  
   <div class="field">
-    <%= f.label :alerttype %><br />
-    <%= f.text_field :alerttype %>
+    <%= f.select :contact, Blert::CONTACT %>
   </div>
   <div class="field">
-    <%= f.label :contact %><br />
-    <%= f.text_field :contact %>
+    <%= f.select :alerttype, Blert::TYPE %>
   </div>
+  
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Alert" %>
   </div>
 <% end %>
