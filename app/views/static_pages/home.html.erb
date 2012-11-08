@@ -30,25 +30,32 @@
   
   <% else %>
   <div class="row">
-  <div class="span6">
-    <h1>Welcome!</h1>
+    <div class="alert alert-success">
+    <h1>Welcome to Bill Pay Center!</h1>
+  </div>
+  <div class="span5">
+    
     <br />
-    <h3> Returning? </h3>
+    <h2> Returning? </h2>
     <br />
     <%= form_for(:session, :url => sessions_path) do |f| %>
 
       <%= f.label :email %>
       <%= f.text_field :email %>
-      <div class="input-append">
+      
       <%= f.label :password %>
       <%= f.password_field :password %>
-
+      <div>
       <%= f.submit "Sign in", :class => "btn btn-large btn-primary" %>
     </div>
     <% end %>
 </div>
-<div class="span3">
-    <p>New user? <%= link_to "Sign up now!", signup_path, :class => "btn btn-large btn-primary" %></p>
+
+<div class="span6">
+  <div class="hero-unit">
+    <h2> New User? </h2><p>Bill Pay Center is an easy way to deal with your credit card payments in one place. It's free, too! Give it a try.</p>
+    <%= link_to '<button type="submit" class="btn btn-large btn-primary">Sign up now!</button>'.html_safe, signup_path %>
+     </div>
     </div>
 </div>
 <% end %>
