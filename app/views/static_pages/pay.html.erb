@@ -1,0 +1,52 @@
+<% provide(:title, 'Pay Credit Card') %>
+<h2> Pay Credit Card: November 2012 </h2>
+<h2> Mastercard 4020 </h2>
+<hr>
+<div class="row-fluid">
+<div class ="span2">
+<p>Amount due:</p>
+<p>Select Amount to Pay:</p>
+
+</div>
+  
+
+<div class="offset2">
+  <span class="help-block">$497.53</span>
+
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+  Statement Balance [$497.53]
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  Minimum Payment [$20.00]
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+Outstanding Balance [$623.44]</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+Other:</label><div class="input-prepend">
+  <span class="add-on">$</span>
+  <input class="span2" id="appendedPrependedInput" type="text">
+</div>
+<p>Pay From:</p>
+<select>
+  <option>Anna's Checking</option>
+  <option>Anna's Savings</option>
+  <option>Anna's BoA</option>
+  <option>Anna's Wells Fargo</option>
+</select>
+<p>Payment Schedule Date (MM/DD/YY):</p>
+<div class="field">
+    <%= text_field :location, placeholder: "Date", :class => "span1" %>
+  </div>
+</div>
+</div>
+
+<div class="form-actions">
+  <div class="offset2">
+  <%= link_to '<button type="submit" class="btn btn-primary">Submit Payment</button>'.html_safe, confirm_path %>
+  <%= link_to '<button type="button" class="btn">Cancel</button>'.html_safe, root_path %>
+</div>
+</div>

@@ -1,0 +1,21 @@
+<% provide(:title, 'Confirmation') %>
+<h2> Authorize Payment </h2>
+<h2> Mastercard 4020: November 2012 </h2>
+<hr>
+<p><em>Summary</em></p>
+<p>Amount: <strong>$200.00</strong></p>
+<p>Pay From: <strong>Anna's BoA</strong></p>
+<p>Payment Schedule Date: <strong>11/29/12</strong></p>
+<label class="checkbox">
+      <input type="checkbox"> Yes, I authorize this payment.
+    </label>
+
+    <div class="form-actions">
+  
+  <%= link_to '<button type="submit" class="btn btn-primary">Submit Payment</button>'.html_safe, processed_path %>
+  <%= link_to '<button type="button" class="btn">Cancel</button>'.html_safe, root_path %>
+  
+
+  
+
+</div>

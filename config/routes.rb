@@ -24,6 +24,9 @@ resources :users do
   match '/about',   to: 'static_pages#about'
   match '/links', to: 'static_pages#links'
   match '/history', to: 'static_pages#history'
+  match '/pay',      to: 'static_pages#pay'
+  match '/confirm',  to: 'static_pages#confirm'
+  match '/processed', to: 'static_pages#processed'
   match '/newcard', to: 'shows#new'
   match '/newbank', to: 'bank_accounts#new'
   match '/newalert', to: 'blerts#new'
@@ -31,13 +34,16 @@ resources :users do
   match '/addband', to: 'bands#new'
   match '/manageaccounts', to: 'shows#past'
   match '/future', to: 'shows#future'
-  match '/shows/:id/pay' => 'shows#pay', :as => :pay
+  #match '/shows/:id/pay' => 'shows#pay', :as => :pay
 
   get "static_pages/home"
   get "static_pages/about"
   get "static_pages/help"
   get "static_pages/contact"
   get "static_pages/history"
+  get "static_pages/pay"
+  get "static_pages/confirm"
+  get "static_pages/processed"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
