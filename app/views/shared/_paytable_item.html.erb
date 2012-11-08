@@ -1,0 +1,16 @@
+<tr>
+  <td><%= paytable_item.cardtype %></td>
+  <td><%= paytable_item.last_four %></td>
+  <td><%= paytable_item.billdate %></td>
+  <td>$<%= paytable_item.owed %>.00</td>
+  <td><%= link_to '<button class="btn btn-success btn-mini btn-block">Pay Now</button>'.html_safe, pay_url(:id => paytable_item.id) %></td>
+</tr>
+     
+     <div class="addnew">
+  <% if current_user?(paytable_item.user) %>
+    
+    
+    
+  <% end %>
+  </span>
+</div>

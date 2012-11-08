@@ -1,13 +1,11 @@
 Punkshows::Application.routes.draw do
-
-
-  resources :users do
+resources :users do
     member do
       get :following, :followers
     end
   end
   resources :sessions,      only: [:new, :create, :edit, :destroy]
-  resources :shows,    only: [:create, :destroy, :show, :edit, :update, :pay]
+  resources :shows,         only: [:create, :destroy, :show, :edit, :update, :pay]
   resources :relationships, only: [:create, :destroy]
   resources :bands,         only: [:create, :destroy, :show, :edit, :update, :index]
   resources :alerts,        only: [:create, :destroy, :show, :edit, :update]
@@ -33,6 +31,7 @@ Punkshows::Application.routes.draw do
   match '/addband', to: 'bands#new'
   match '/manageaccounts', to: 'shows#past'
   match '/future', to: 'shows#future'
+  match '/shows/:id/pay' => 'shows#pay', :as => :pay
 
   get "static_pages/home"
   get "static_pages/about"

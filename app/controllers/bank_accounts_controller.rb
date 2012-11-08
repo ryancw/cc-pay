@@ -42,7 +42,7 @@ class BankAccountsController < ApplicationController
   # POST /bank_accounts
   # POST /bank_accounts.json
   def create
-    @bank_account = BankAccount.new(params[:bank_account])
+    @bank_account = current_user.bank_accounts.build(params[:bank_account])
 
     respond_to do |format|
       if @bank_account.save

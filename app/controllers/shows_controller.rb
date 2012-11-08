@@ -1,6 +1,6 @@
 class ShowsController < ApplicationController
-  before_filter :signed_in_user, only: [:create, :destroy, :edit]
-  before_filter :correct_user,   only: [:destroy, :edit]
+  before_filter :signed_in_user, only: [:create, :destroy, :edit, :pay]
+  before_filter :correct_user,   only: [:destroy, :edit, :pay]
   #before_filter :admin_user,     only: [:destroy, :edit]
 
 
@@ -21,9 +21,9 @@ def past
 end
 
 def pay
-  params[:money_paid]
-  flash[:success] = "Your payment has been scheduled."
-  redirect_to root_path
+  respond_to do |format|
+      format.html
+    end
 end
 
 #def future
@@ -106,8 +106,8 @@ end
 def update
     @show = Show.find(params[:id])
     if @show.update_attributes(params[:show])
-      flash[:success] = "show updated"
-      redirect_to @show
+      flash[:success] = "Payment processed."
+      redirect_to root_path
     else
       render 'edit'
     end
@@ -126,7 +126,8 @@ def update
 
   def destroy
     @show.destroy
-    redirect_back_or root_path
+    flash[:error] = "Credit Card removed"
+    redirect_to manageaccounts_path
   end
 
   private

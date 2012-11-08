@@ -1,7 +1,7 @@
 <li id="<%= bank_item.id %>">
     <span class="content">
-      <i class="icon-exclamation-sign"></i> <%= bank_item.checking %> - <%= bank_item.routing %> - Expiration:
-       <%= bank_item.nickname %>/<%= bank_item.bank %>
+      <i class="icon-exclamation-sign"></i> <%= bank_item.checking %> <%= bank_item.routing %>
+       <%= bank_item.nickname %> <%= bank_item.bankname %>
      
      <div class="addnew">
   <% if current_user?(bank_item.user) %>

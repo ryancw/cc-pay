@@ -1,15 +1,6 @@
 <li id="<%= feed_item.id %>">
     <span class="content">
       <i class="icon-exclamation-sign"></i> Your <%= feed_item.cardtype %> card <%= feed_item.last_four %> payment is due on <%= feed_item.billdate %>
-     <%= link_to feed_item.link, feed_item %>
-     
-  <% if current_user?(feed_item.user) %>
-    <%= link_to '<i class="icon-edit"></i>'.html_safe, edit_show_path(feed_item) %>
-    <%= link_to '<i class="icon-trash"></i>'.html_safe, feed_item, method:  :delete,
-                                     confirm: "You sure?",
-                                     title:   feed_item.content %>
-    
-  <% end %>
   </span>
 </li>
 

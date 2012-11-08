@@ -7,11 +7,26 @@
   <% if @past_items.any? %>
   <ol class="microposts">
     <%= render partial: 'shared/feed_item', collection: @past_items %>
-
   </ol>
   
 <% end %>
 </div>
+<h1>November <%= Date.today.year %></h1> 
+<table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Card Type</th>
+      <th>Last 4 Digits</th>
+      <th>Bill Due</th>
+      <th>Amount Owed</th>
+      <th>Pay Now</th>
+    </tr>
+    </thead>
+    <tbody>
+      <%= render partial: 'shared/paytable_item', collection: @past_items %>
+    </tbody>
+
+    </table>
   
   <% else %>
   <div class="row">
@@ -32,7 +47,7 @@
     </div>
     <% end %>
 </div>
-<div class="span3 offset6">
+<div class="span3">
     <p>New user? <%= link_to "Sign up now!", signup_path, :class => "btn btn-large btn-primary" %></p>
     </div>
 </div>

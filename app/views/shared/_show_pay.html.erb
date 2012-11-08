@@ -1,9 +1,10 @@
-<h1> Pay Credit Card <%= @show.cardtype %> </h2>
+<h1> Pay Credit Card: November 2012 </h1>
+<h2> <%= @show.cardtype %> <%= @show.last_four %> </h2>
+
 
 <%= form_for(@show) do |f| %>
  <%= render 'shared/error_messages', object: f.object %>
     
-
   <div class="field">
     <%= f.text_field :acts, placeholder: "First Name" %>
   </div>
@@ -18,8 +19,6 @@
   <div class="field">
     <%= f.text_field :cardnumber, placeholder: "Card Number" %>
   </div>
-
-  Expiration Date
 
   <div class="field">
     <%= f.date_select :date, :discard_day => true, :add_month_numbers => "true" %>

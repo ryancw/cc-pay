@@ -1,0 +1,20 @@
+
+<% provide(:title, 'Pay Credit Card') %>
+<h1> Pay Credit Card: November 2012 </h1>
+<h2> <%= @show.cardtype %> <%= @show.last_four %> </h2>
+<br> DIVIDING LINE </br>
+<%= form_for @show do |t| %>
+Payment due: $<%= @show.owed %>.00 <br />
+
+Select amount to pay: <br />
+
+<%= t.radio_button(:owed, "#{@show.owed}") %>
+<%= label_tag(:age_child, "Statement Balance [$#{@show.owed}.00]") %>
+<%= t.radio_button(:owed, "20") %>
+<%= label_tag(:age_adult, "Minimum Payment [$20.00]") %>
+<%= t.radio_button(:owed, "62") %>
+<%= label_tag(:age_adult, "Outstanding Balance [$62.00]") %>
+<%= label_tag(:age_adult, "Other:") %>
+<%= number_field_tag('owed') %>
+<%= t.submit "Submit Payment" %>
+<% end %>
