@@ -364,3 +364,13 @@ unmatched close parenthesis: /div>
 [11/07/12 23:15:24 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `model_name' for NilClass:Class
 [11/07/12 23:16:05 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `empty?' for nil:NilClass
 [11/07/12 23:16:05 -0500 Ryans-MacBook-Pro.local (2498)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `empty?' for nil:NilClass
+[12/02/12 17:26:51 -0500 Ryans-MacBook-Pro.local (1491)] INFO : Dispatcher: thin
+[12/02/12 17:26:51 -0500 Ryans-MacBook-Pro.local (1491)] INFO : Application: My Application
+[12/02/12 17:26:51 -0500 Ryans-MacBook-Pro.local (1491)] WARN : Agent configured not to send data in this environment.
+[12/02/12 17:26:51 -0500 Ryans-MacBook-Pro.local (1491)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 1491
+[12/02/12 17:26:51 -0500 Ryans-MacBook-Pro.local (1491)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log
+[12/02/12 17:27:19 -0500 Ryans-MacBook-Pro.local (1562)] INFO : Dispatcher: thin
+[12/02/12 17:27:19 -0500 Ryans-MacBook-Pro.local (1562)] INFO : Application: My Application
+[12/02/12 17:27:19 -0500 Ryans-MacBook-Pro.local (1562)] WARN : Agent configured not to send data in this environment.
+[12/02/12 17:27:19 -0500 Ryans-MacBook-Pro.local (1562)] INFO : New Relic Ruby Agent 3.5.0 Initialized: pid = 1562
+[12/02/12 17:27:19 -0500 Ryans-MacBook-Pro.local (1562)] INFO : Agent Log at /Users/Ryan/Documents/Code/CC/ccpay/log/newrelic_agent.log

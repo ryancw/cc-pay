@@ -52,7 +52,8 @@ class BlertsController < ApplicationController
 
     respond_to do |format|
       if @blert.save
-        format.html { redirect_to alerts_path, notice: 'Alert was successfully created.' }
+        flash[:success] = 'Alert was successfully created.'
+        format.html { redirect_to alerts_path}
         format.json { render json: @blert, status: :created, location: @blert }
       else
         format.html { render action: "new" }

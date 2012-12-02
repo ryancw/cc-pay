@@ -46,6 +46,15 @@
 .addnew {
   display: inline;
   float: right;
+  color: #FFFFFF;
+}
+
+a.addnew:link { 
+  color: #FFFFFF;
+}
+
+a.addnew:visited { 
+  color: #FFFFFF;
 }
 
 .cool-box {

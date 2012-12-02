@@ -19,13 +19,13 @@
       <div class="container">
         <ul class="nav nav-tabs" id="titles">
         <li class="<%= "active" if params[:action] == "home" %>">
-          <%= link_to '<i class="icon-home"></i> Home'.html_safe, root_path %></li>
+          <%= link_to '<i class="icon-home"></i> Current Bills'.html_safe, root_path %></li>
         <li class="<%= "active" if params[:action] == "history" %>">
           <%= link_to '<i class="icon-folder-open"></i>  Bill History'.html_safe, history_path %></li>
         <li class="<%= "active" if params[:controller] == "blerts" %>">
           <%= link_to '<i class="icon-calendar"></i> Alerts'.html_safe, alerts_path %></li>
         <li class="<%= "active" if params[:controller] == "shows" && params[:action] == "past" %>">
-          <%= link_to '<i class="icon-align-left"></i> Manage Accounts'.html_safe, manageaccounts_path %></li>
+          <%= link_to '<i class="icon-align-left"></i> Manage Cards and Accounts'.html_safe, manageaccounts_path %></li>
         <li class="<%= "active" if params[:controller] == "users" && params[:action] == "edit" %>">
           <%= link_to '<i class="icon-cog"></i> Settings'.html_safe, edit_user_path(current_user) %></li>
       </ul>
